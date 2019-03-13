@@ -27,7 +27,7 @@
 		then
 	then ;
 
-( a -- addr_with_result )
+( a -- addr_result )
 : allot-prime-result
 	is-prime 1 allot 2dup ! swap drop ;
 
@@ -40,6 +40,7 @@
 	rot string-copy ;
 
 ( a b -- n)
+( where n is max number: a mod b^n == 0 )
 : divisor-power
 	0 -rot
 	repeat
