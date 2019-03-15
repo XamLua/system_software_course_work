@@ -36,7 +36,6 @@
 	swap 2dup count swap count + 1 + heap-alloc
 	( addr_2 addr_1 addr_3 )
 	swap 2dup string-copy count over +
-	( addr_2 addr_3 addr_3_with_offset )
 	rot string-copy ;
 
 ( a b -- n)
